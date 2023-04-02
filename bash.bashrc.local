@@ -1,10 +1,12 @@
 ##
-## PS1
+## INTERACTIVE SHELLS ONLY  
 ##
-# If not running interactively, don't do anything
 if [[ $- != *i* ]]; then
   return
 else
+  ##
+  ## COLORS
+  ##
   # bg colors
   bg_black="\[\033[40m\]"
   bg_red="\[\033[41m\]"
@@ -14,7 +16,6 @@ else
   bg_magenta="\[\033[45m\]"
   bg_cyan="\[\033[46m\]"
   bg_white="\[\033[47m\]"
- 
   # fg colors
   fg_black="\[\033[30m\]"
   fg_red="\[\033[31m\]"
@@ -24,7 +25,6 @@ else
   fg_magenta="\[\033[35m\]"
   fg_cyan="\[\033[36m\]"
   fg_white="\[\033[37m\]"
- 
   # bold fg colors
   fg_bblack="\[\033[1;30m\]"
   fg_bred="\[\033[1;31m\]"
@@ -34,10 +34,12 @@ else
   fg_bmagenta="\[\033[1;35m\]"
   fg_bcyan="\[\033[1;36m\]"
   fg_bwhite="\[\033[1;37m\]"
- 
   # reset colorization
   nocolor="\[\033[0m\]"
- 
+
+  ##
+  ## PS1
+  ##
   PS1=""
   if [[ -z $PS1 ]]; then
     PS1="$bg_yellow $nocolor \u@\h $fg_cyan\w$nocolor"
