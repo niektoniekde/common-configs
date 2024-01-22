@@ -1,5 +1,0 @@
-backtick 100 60 60 cat /etc/hostname
-caption always "%?%F%{= RW}%:%{= kR}%? %{+b ..}%S%{-} %{+b ..}%?%F>>%:--%?%{-} %?%F%{+b ..}%n%f%{-}%:%n%f%? %t"
-hardstatus alwayslastline "%{= dR} %{+b .w}%100`%{-} %Y-%m-%d %c %-=%{+b ..}unfocused%{-}: %?%W%:-%? %{-}"
-defdynamictitle on
-term "screen-256color"
